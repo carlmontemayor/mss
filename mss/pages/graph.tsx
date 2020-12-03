@@ -1,5 +1,5 @@
-import { Button, Grid, Paper, Typography } from '@material-ui/core';
-import { SimpleContainer, ButtonContainer } from 'components/Container';
+import { Button, Grid, Typography } from '@material-ui/core';
+import { SimpleContainer } from 'components/Container';
 import { DefaultGraph } from 'components/Graph';
 
 export const CoolGraph = (): JSX.Element => {
@@ -8,6 +8,7 @@ export const CoolGraph = (): JSX.Element => {
       <Grid xs={12} item>
         <DefaultGraph />
       </Grid>
+      hello
       <Grid xs={12} item>
         <Typography variant="h4">Control Panel</Typography>
         <SimpleContainer>

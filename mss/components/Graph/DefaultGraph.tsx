@@ -16,7 +16,7 @@ const initialElements = [
 ];
 
 export const DefaultGraph = (): JSX.Element => {
-  const [elements, setElements] = React.useState(initialElements);
+  const [elements] = React.useState(initialElements);
 
   return (
     <div style={{ height: 750, border: '1px solid black', marginBottom: 50 }}>
