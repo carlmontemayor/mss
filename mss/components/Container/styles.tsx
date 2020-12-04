@@ -1,9 +1,9 @@
+import { Grid } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 
 export const ButtonContainer = styled('div')({
-  background: 'papayawhip',
-  height: 100,
-  width: 1000,
+  display: 'flex',
+  flexDirection: 'column',
 });
 
 export const SimpleContainer = styled('div')({
@@ -14,8 +14,6 @@ export const SimpleContainer = styled('div')({
   display: 'flex',
 });
 
-export const GraphContainer = styled('div')({
-  height: 750,
-  border: '1px solid black',
-  marginBottom: 50,
+export const GraphContainer = styled(Grid)({
+  marginTop: 20,
 });
