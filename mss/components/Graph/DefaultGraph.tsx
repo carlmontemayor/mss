@@ -1,26 +1,30 @@
 import * as React from 'react';
-import ReactFlow, { Background } from 'react-flow-renderer';
+import ReactFlow, { Background, FlowElement } from 'react-flow-renderer';
+import { CoolSimulation } from 'simulations';
+import CustomNode from '../Node/CustomNode';
 
-const initialElements = [
-  {
-    id: '1',
-    type: 'input',
-    data: { label: 'PostgreSQL' },
-    position: { x: 250, y: 25 },
-  },
-  {
-    id: '2',
-    data: { label: 'API' },
-    position: { x: 100, y: 125 },
-  },
-];
-
+const nodeTypes = {
+  selectorNode: CustomNode,
+};
 export const DefaultGraph = (): JSX.Element => {
-  const [elements] = React.useState(initialElements);
+
+  const [elements] = React.useState<Array<FlowElement>>(CoolSimulation);
+
 
   return (
-    <div style={{ height: 750, border: '1px solid black', marginBottom: 50 }}>
-      <ReactFlow elements={elements}>
+    <div
+      style={{
+        height: 700,
+        border: '1px solid black',
+        marginBottom: 50,
+      }}
+    >
+      <ReactFlow
+        nodeTypes={nodeTypes}
+        elements={elements}
+        deleteKeyCode={46}
+        defaultZoom={2}
+      >
         <Background gap={16} size={0.75} />
       </ReactFlow>
     </div>

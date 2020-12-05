@@ -1,21 +1,43 @@
-import { Button, Grid, Typography } from '@material-ui/core';
-import { SimpleContainer } from 'components/Container';
+
+import { Grid, Paper, Toolbar, Typography } from '@material-ui/core';
+import { ControlPanel } from 'components/ControlPanel';
+import { GraphContainer } from 'components/Container';
 import { DefaultGraph } from 'components/Graph';
+import { TopNavigation } from 'components/TopNavigation';
+import React from 'react';
+
+// make a node component
 
 export const CoolGraph = (): JSX.Element => {
   return (
     <Grid container>
       <Grid xs={12} item>
-        <DefaultGraph />
+        <TopNavigation position="static">
+          <Toolbar>
+            <Typography variant="h6">MSS - Microservice Simulation</Typography>
+          </Toolbar>
+        </TopNavigation>
       </Grid>
-      hello
+
+      <GraphContainer xs={12} item>
+        <Grid container>
+          <Grid xs={10} item>
+            <Grid container>
+              <Grid xs={1} item />
+              <Grid xs={10}>
+                <DefaultGraph />
+              </Grid>
+              <Grid xs={1} item />
+            </Grid>
+          </Grid>
+          <Grid xs={2} item>
+            <ControlPanel />
+          </Grid>
+        </Grid>
+      </GraphContainer>
+
       <Grid xs={12} item>
-        <Typography variant="h4">Control Panel</Typography>
-        <SimpleContainer>
-          <Button variant="contained">ADD</Button>
-          <Button variant="contained">REMOVE</Button>
-          <Button variant="contained">MODIFY</Button>
-        </SimpleContainer>
+        <Paper>footer</Paper>
       </Grid>
     </Grid>
   );
