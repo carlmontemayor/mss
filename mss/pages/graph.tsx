@@ -1,4 +1,4 @@
-import { AppBar, Grid, Paper, Toolbar, Typography } from '@material-ui/core';
+import { Grid, Paper, Toolbar, Typography } from '@material-ui/core';
 import { ControlPanel } from 'components/ControlPanel';
 import { GraphContainer } from 'components/Container';
 import { DefaultGraph } from 'components/Graph';
@@ -20,7 +20,13 @@ export const CoolGraph = (): JSX.Element => {
       <GraphContainer xs={12} item>
         <Grid container>
           <Grid xs={10} item>
-            <DefaultGraph />
+            <Grid container>
+              <Grid xs={1} item />
+              <Grid xs={10}>
+                <DefaultGraph />
+              </Grid>
+              <Grid xs={1} item />
+            </Grid>
           </Grid>
           <Grid xs={2} item>
             <ControlPanel />
