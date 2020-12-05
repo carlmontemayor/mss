@@ -7,7 +7,9 @@ const nodeTypes = {
   selectorNode: CustomNode,
 };
 export const DefaultGraph = (): JSX.Element => {
+
   const [elements] = React.useState<Array<FlowElement>>(CoolSimulation);
+
 
   return (
     <div

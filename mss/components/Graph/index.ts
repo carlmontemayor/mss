@@ -1,1 +1,1 @@
-export { DefaultGraph } from "./DefaultGraph"
+export { DefaultGraph } from './DefaultGraph';
