@@ -1,1 +1,7 @@
-export { SimpleContainer, ButtonContainer, GraphContainer } from './styles';
+export {
+  ControlPanelButtonContainer,
+  SimpleContainer,
+  ButtonContainer,
+  GraphContainer,
+  ControlPanelContainer,
+} from './styles';

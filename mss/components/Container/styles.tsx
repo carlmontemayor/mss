@@ -14,6 +14,19 @@ export const SimpleContainer = styled('div')({
   display: 'flex',
 });
 
+export const ControlPanelContainer = styled('div')({
+  border: '1px solid black',
+});
+
 export const GraphContainer = styled(Grid)({
   marginTop: 20,
+});
+
+export const ControlPanelButtonContainer = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  '& > *': {
+    margin: 12,
+  },
 });
