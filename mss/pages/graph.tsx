@@ -21,7 +21,7 @@ export const CoolGraph = (): JSX.Element => {
   ]);
 
   const [elements, setElements] = React.useState<Array<FlowElement>>(
-    CoolSimulation
+    IntricateSimulation
   );
 
   const handleSimulationChange = (simulationType: SimulationType) => {
