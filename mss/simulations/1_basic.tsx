@@ -4,7 +4,8 @@ export const CoolSimulation = [
     type: 'selectorNode',
     data: { label: 'customNode', type: 'RESTful API' },
     style: {
-      border: '1px solid black',
+      border: '2px solid green',
+      borderRadius: 3,
       padding: 10,
     },
     position: { x: 200, y: 150 },
@@ -14,7 +15,8 @@ export const CoolSimulation = [
     type: 'selectorNode',
     data: { label: 'customNode', type: 'React Frontend' },
     style: {
-      border: '1px solid black',
+      border: '2px solid green',
+      borderRadius: 3,
       padding: 10,
     },
     position: { x: 400, y: 250 },
@@ -24,7 +26,8 @@ export const CoolSimulation = [
     type: 'selectorNode',
     data: { label: 'customNode', type: 'PostgreSQL' },
     style: {
-      border: '1px solid black',
+      border: '2px solid green',
+      borderRadius: 3,
       padding: 10,
     },
     position: { x: 50, y: 150 },
@@ -34,10 +37,23 @@ export const CoolSimulation = [
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Client Dashboard' },
     style: {
-      border: '1px solid black',
+      border: '2px solid green',
+      borderRadius: 3,
       padding: 10,
     },
     position: { x: 400, y: 50 },
+  },
+  {
+    id: '5',
+    type: 'selectorNode',
+    data: { label: 'customNode', type: 'User(s)' },
+    style: {
+      border: '2px solid green',
+      borderRadius: 3,
+      height: 140,
+      padding: 10,
+    },
+    position: { x: 575, y: 100 },
   },
   {
     id: 'a1-3',
@@ -61,6 +77,24 @@ export const CoolSimulation = [
     id: 'a1-4',
     source: '1',
     target: '4',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a4-5',
+    source: '4',
+    target: '5',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a2j-5',
+    source: '2',
+    target: '5',
     animated: true,
     style: {
       stroke: 'blue',
