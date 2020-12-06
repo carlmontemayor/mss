@@ -50,6 +50,7 @@ export const CoolGraph = (): JSX.Element => {
           </Toolbar>
         </TopNavigation>
       </Grid>
+
       <GraphContainer xs={12} item>
         <Grid container>
           <Grid xs={10} item>
@@ -69,6 +70,7 @@ export const CoolGraph = (): JSX.Element => {
           </Grid>
         </Grid>
       </GraphContainer>
+
       <Grid xs={12} item>
         <Paper>footer</Paper>
       </Grid>
