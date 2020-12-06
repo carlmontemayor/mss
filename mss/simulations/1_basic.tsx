@@ -92,7 +92,7 @@ export const CoolSimulation = [
     },
   },
   {
-    id: 'a2j-5',
+    id: 'a2-5',
     source: '2',
     target: '5',
     animated: true,

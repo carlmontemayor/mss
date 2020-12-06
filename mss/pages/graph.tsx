@@ -3,7 +3,7 @@ import { ControlPanel } from 'components/ControlPanel';
 import { GraphContainer } from 'components/Container';
 import { DefaultGraph } from 'components/Graph';
 import { TopNavigation } from 'components/TopNavigation';
-import { FlowElement } from 'react-flow-renderer';
+import { Edge, FlowElement } from 'react-flow-renderer';
 import {
   CoolSimulation,
   ComplicatedSimulation,
@@ -19,9 +19,12 @@ export const CoolGraph = (): JSX.Element => {
     'intricate',
     'complicated',
   ]);
+  const [simulationType, setSimulationType] = React.useState<SimulationType>(
+    'cool'
+  );
 
-  const [elements, setElements] = React.useState<Array<FlowElement>>(
-    ComplicatedSimulation
+  const [elements, setElements] = React.useState<Array<FlowElement | Edge>>(
+    CoolSimulation
   );
 
   const handleSimulationChange = (simulationType: SimulationType) => {
@@ -65,6 +68,9 @@ export const CoolGraph = (): JSX.Element => {
             <ControlPanel
               simulations={simulations}
               handleSimulationChange={handleSimulationChange}
+              simulationElements={elements}
+              simulationType={simulationType}
+              setElements={setElements}
             />
           </Grid>
         </Grid>
