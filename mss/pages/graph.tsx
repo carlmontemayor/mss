@@ -21,7 +21,7 @@ export const CoolGraph = (): JSX.Element => {
   ]);
 
   const [elements, setElements] = React.useState<Array<FlowElement>>(
-    IntricateSimulation
+    ComplicatedSimulation
   );
 
   const handleSimulationChange = (simulationType: SimulationType) => {
@@ -50,7 +50,6 @@ export const CoolGraph = (): JSX.Element => {
           </Toolbar>
         </TopNavigation>
       </Grid>
-
       <GraphContainer xs={12} item>
         <Grid container>
           <Grid xs={10} item>

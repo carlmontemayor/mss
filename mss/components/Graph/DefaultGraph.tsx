@@ -25,7 +25,7 @@ export const DefaultGraph: React.FC<DefaultGraphProps> = ({
         nodeTypes={nodeTypes}
         elements={simulationElements}
         deleteKeyCode={46}
-        defaultZoom={2}
+        defaultZoom={1.5}
       >
         <Background gap={16} size={0.75} />
       </ReactFlow>
