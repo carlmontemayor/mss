@@ -6,6 +6,11 @@ import {
   ControlPanelButtonContainer,
   ControlPanelContainer,
 } from 'components/Container';
+import {
+  CoolSimulation,
+  ComplicatedSimulation,
+  IntricateSimulation,
+} from 'simulations';
 import { ControlPanelButton } from 'components/Button';
 import { Button, ButtonGroup, Typography } from '@material-ui/core';
 import { random } from 'lodash';
@@ -46,10 +51,15 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
     }
   };
 
+  const handleResetClick = () => {
+    console.log('resetting');
+  };
+
   const handleClick = () => {
     const failedNodeIndex = toNumber(FindRandomNode(simulationType));
     console.log(failedNodeIndex);
     var failedNode = simulationElements[failedNodeIndex];
+    console.log(failedNode);
     failedNode.style = {
       border: '2px solid red',
     };
@@ -63,6 +73,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
         element.target === adjustedFailedNodeIndex.toString() ||
         element.source === adjustedFailedNodeIndex.toString()
       ) {
+        element.animated = false;
         element.style = {
           stroke: 'red',
         };
@@ -93,6 +104,9 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
       <ButtonContainer>
         <ControlPanelButton onClick={() => handleClick()}>
           {capitalize('run')}
+        </ControlPanelButton>
+        <ControlPanelButton onClick={() => handleResetClick()}>
+          {capitalize('reset')}
         </ControlPanelButton>
       </ButtonContainer>
     </ControlPanelContainer>
