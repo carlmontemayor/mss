@@ -17,7 +17,7 @@ If you would like to view the the simulation software via the website, simply vi
 Once at the website, you have several options listed in the homepage. You can visit the documentation such as our reports and Github. Most importantly, you can access the simulation itself by clicking the "Simulation" card.
 
 **Homepage**
-![Image of home page for website](/images/homepage.png 'Homepage')
+![Image of home page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/homepage.png 'Homepage')
 
 ### Local
 
@@ -43,19 +43,19 @@ npm run dev
 Regardless of which way the simulation is run, you have the option of finding looking at the simulation page.
 
 **Simulation**
-![Image of simulation page for website](/images/simulationpage.png 'Simulation page')
+![Image of simulation page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/homepage.png 'Simulation page')
 
 In this section, a set of nodes is already pre-built for the user. The nodes themselves can be dragged and moved around as needed for a clearer view. The nodes are indicated by `green` boxes and their data flow is shown in `blue`.
 
 To the left of the simulation view, there is the `ControlPanel` component. This control panel allows the user to switch between three simulation types: `cool`, `intricate`, and `complicated`. The `Cool` simulation is a simple case wherein there is a simple client-server architecture that is simulated by nodes. While the `Complciated` simulation is a full-on micro-service architecture that features several services.
 
 **Simulation Demonstration**
-![Image of simulation demonstration page for website](/images/normal_flow.png 'Simulation demonstration')
+![Image of simulation demonstration page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/normal_flow.png 'Simulation demonstration')
 
 Within the `ControlPanel` component, there is an option to either `run` or `reset` the simulation. If the user chooses `run`, then the simualtion will start. The simulation starts by picking any random node within the graph and it will effectively pain that node `red` as in faulty. This means that data flowing in/out of that node is effectivley rendered useless, and the data flow is demonstrated by a non-flowing red edge.
 
 **Simulation Demonstration cont.**
-![Image of simulation demonstration page for website](/images/irregular_flow.png 'Simulation demonstration')
+![Image of simulation demonstration page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/irregular_flow.png 'Simulation demonstration')
 
 In the case that a terminal node is selected as faulty, there is still a relatively high availability since the faulty node is terminal. However, as there are more connected nodes that may turn faulty, the data that is being passed is reduced. Once the user is done with the simulation, he or she can either click the `reset` button or refresh the entire page to clear out the simulation.
 
