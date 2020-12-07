@@ -15,7 +15,8 @@ export const SimpleContainer = styled('div')({
 });
 
 export const ControlPanelContainer = styled('div')({
-  border: '1px solid black',
+  border: '2px solid black',
+  borderRadius: 3,
 });
 
 export const GraphContainer = styled(Grid)({

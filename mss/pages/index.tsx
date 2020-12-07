@@ -47,14 +47,8 @@ export const Home = (): JSX.Element => (
     </main>
 
     <footer>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Made by Curtis Chung + Carl Montemayor w/ ❤️ <br /> CPE 400 - Dynamic
-        Routing in a Faulty Network
-      </a>
+      Made by Curtis Chung + Carl Montemayor w/ ❤️ <br /> CPE 400 - Dynamic
+      Routing in a Faulty Network
     </footer>
 
     <style jsx>{`
