@@ -43,7 +43,7 @@ npm run dev
 Regardless of which way the simulation is run, you have the option of finding looking at the simulation page.
 
 **Simulation**
-![Image of simulation page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/homepage.png 'Simulation page')
+![Image of simulation page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/simulationpage.png 'Simulation page')
 
 In this section, a set of nodes is already pre-built for the user. The nodes themselves can be dragged and moved around as needed for a clearer view. The nodes are indicated by `green` boxes and their data flow is shown in `blue`.
 
