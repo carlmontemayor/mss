@@ -20,11 +20,11 @@ export const CoolGraph = (): JSX.Element => {
     'complicated',
   ]);
   const [simulationType, setSimulationType] = React.useState<SimulationType>(
-    'intricate'
+    'complicated'
   );
 
   const [elements, setElements] = React.useState<Array<FlowElement | Edge>>(
-    IntricateSimulation
+    ComplicatedSimulation
   );
 
   const handleSimulationChange = (simulationType: SimulationType) => {
