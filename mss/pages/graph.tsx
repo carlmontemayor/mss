@@ -79,7 +79,20 @@ export const CoolGraph = (): JSX.Element => {
         </Grid>
       </GraphContainer>
       <Grid xs={12} item>
-        <Paper>footer</Paper>
+        <footer>
+          Made by Curtis Chung + Carl Montemayor w/ ❤️ <br /> CPE 400 - Dynamic
+          Routing in a Faulty Network
+        </footer>
+        <style jsx>{`
+          footer {
+            width: 100%;
+            height: 100px;
+            border-top: 1px solid #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        `}</style>
       </Grid>
     </Grid>
   );

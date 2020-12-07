@@ -1,9 +1,9 @@
 import { Button } from '@material-ui/core';
 
-export const Blog = (): JSX.Element => (
+export const Report = (): JSX.Element => (
   <div>
     <Button>hello</Button>
   </div>
 );
 
-export default Blog;
+export default Report;

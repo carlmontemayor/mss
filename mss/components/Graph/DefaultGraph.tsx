@@ -17,8 +17,9 @@ export const DefaultGraph: React.FC<DefaultGraphProps> = ({
     <div
       style={{
         height: 700,
-        border: '1px solid black',
+        border: '2px solid black',
         marginBottom: 50,
+        borderRadius: 5,
       }}
     >
       <ReactFlow
