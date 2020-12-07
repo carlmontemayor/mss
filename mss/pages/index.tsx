@@ -9,21 +9,24 @@ export const Home = (): JSX.Element => (
 
     <main>
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">MSS</a>
+        Welcome to{' '}
+        <a href="https://github.com/carlmontemayor/mss">
+          MSS - Microservice Simulation
+        </a>
       </h1>
 
       <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
+        <a href="/documentation" className="card">
           <h3>Documentation &rarr;</h3>
           <p>Find the documentation for the code.</p>
         </a>
 
-        <a href="https://nextjs.org/learn" className="card">
+        <a href="/report" className="card">
           <h3>Report &rarr;</h3>
           <p>Read our report regarding our CPE 400 project.</p>
         </a>
 
-        <a href="https://nextjs.org/learn" className="card">
+        <a href="/problem" className="card">
           <h3>Problem Statement &rarr;</h3>
           <p>Read our project description + goals to understand the project.</p>
         </a>
