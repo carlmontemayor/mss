@@ -54,21 +54,8 @@ export const ComplicatedSimulation = [
     },
     position: { x: 50, y: 250 },
   },
-  /*
   {
-    id: '99',
-    type: 'selectorNode',
-    data: { label: 'customNode', type: 'PostgreSQL' },
-    style: {
-      border: '2px solid green',
-      borderRadius: 3,
-      padding: 10,
-    },
-    position: { x: 50, y: 250 },
-  },
-  */
-  {
-    id: '7',
+    id: '6',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Catalog Service' },
     style: {
@@ -79,7 +66,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 50 },
   },
   {
-    id: '8',
+    id: '7',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Basket Service' },
     style: {
@@ -90,7 +77,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 100 },
   },
   {
-    id: '9',
+    id: '8',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Auth Service' },
     style: {
@@ -101,7 +88,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 150 },
   },
   {
-    id: '10',
+    id: '9',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Ordering Service' },
     style: {
@@ -112,7 +99,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 200 },
   },
   {
-    id: '11',
+    id: '10',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Analytics Service' },
     style: {
@@ -123,7 +110,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 250 },
   },
   {
-    id: '12',
+    id: '11',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'API Gateway' },
     style: {
@@ -134,7 +121,7 @@ export const ComplicatedSimulation = [
     position: { x: 525, y: 150 },
   },
   {
-    id: '13',
+    id: '12',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Mobile Gateway' },
     style: {
@@ -145,7 +132,7 @@ export const ComplicatedSimulation = [
     position: { x: 375, y: 100 },
   },
   {
-    id: '14',
+    id: '13',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Web Gateway' },
     style: {
@@ -156,7 +143,7 @@ export const ComplicatedSimulation = [
     position: { x: 375, y: 200 },
   },
   {
-    id: '15',
+    id: '14',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'RESTful API' },
     style: {
@@ -167,7 +154,7 @@ export const ComplicatedSimulation = [
     position: { x: 650, y: 100 },
   },
   {
-    id: '16',
+    id: '15',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'GraphQL' },
     style: {
@@ -178,7 +165,7 @@ export const ComplicatedSimulation = [
     position: { x: 650, y: 200 },
   },
   {
-    id: '17',
+    id: '16',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Mobile App' },
     style: {
@@ -189,7 +176,7 @@ export const ComplicatedSimulation = [
     position: { x: 825, y: 200 },
   },
   {
-    id: '18',
+    id: '17',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Web Client' },
     style: {
@@ -200,7 +187,7 @@ export const ComplicatedSimulation = [
     position: { x: 825, y: 50 },
   },
   {
-    id: '19',
+    id: '18',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Web SPA Client' },
     style: {
@@ -211,7 +198,7 @@ export const ComplicatedSimulation = [
     position: { x: 825, y: 125 },
   },
   {
-    id: '20',
+    id: '19',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'User(s)' },
     style: {
@@ -223,8 +210,17 @@ export const ComplicatedSimulation = [
     position: { x: 975, y: 50 },
   },
   {
-    id: 'a1-7',
+    id: 'a1-6',
     source: '1',
+    target: '6',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a2-7',
+    source: '2',
     target: '7',
     animated: true,
     style: {
@@ -232,8 +228,8 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a2-8',
-    source: '2',
+    id: 'a3-8',
+    source: '3',
     target: '8',
     animated: true,
     style: {
@@ -241,8 +237,8 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a3-9',
-    source: '3',
+    id: 'a4-9',
+    source: '4',
     target: '9',
     animated: true,
     style: {
@@ -250,8 +246,8 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a4-10',
-    source: '4',
+    id: 'a5-10',
+    source: '5',
     target: '10',
     animated: true,
     style: {
@@ -259,15 +255,14 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a5-11',
-    source: '5',
-    target: '11',
+    id: 'a6-13',
+    source: '6',
+    target: '13',
     animated: true,
     style: {
       stroke: 'blue',
     },
   },
-  // 7 13
   {
     id: 'a7-13',
     source: '7',
@@ -305,43 +300,70 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a11-13',
-    source: '11',
-    target: '13',
+    id: 'a6-12',
+    source: '6',
+    target: '12',
     animated: true,
     style: {
       stroke: 'blue',
     },
   },
   {
-    id: 'a7-14',
+    id: 'a7-12',
     source: '7',
-    target: '14',
+    target: '12',
     animated: true,
     style: {
       stroke: 'blue',
     },
   },
   {
-    id: 'a8-14',
+    id: 'a8-12',
     source: '8',
-    target: '14',
+    target: '12',
     animated: true,
     style: {
       stroke: 'blue',
     },
   },
   {
-    id: 'a9-14',
+    id: 'a9-12',
     source: '9',
-    target: '14',
+    target: '12',
     animated: true,
     style: {
       stroke: 'blue',
     },
   },
   {
-    id: 'a10-14',
+    id: 'a10-12',
+    source: '10',
+    target: '12',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a12-11',
+    source: '12',
+    target: '11',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a13-11',
+    source: '13',
+    target: '11',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a11-14',
     source: '11',
     target: '14',
     animated: true,
@@ -350,26 +372,17 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a13-12',
-    source: '13',
-    target: '12',
+    id: 'a11-15',
+    source: '11',
+    target: '15',
     animated: true,
     style: {
       stroke: 'blue',
     },
   },
   {
-    id: 'a14-12',
+    id: 'a14-16',
     source: '14',
-    target: '12',
-    animated: true,
-    style: {
-      stroke: 'blue',
-    },
-  },
-  {
-    id: 'a12-16',
-    source: '12',
     target: '16',
     animated: true,
     style: {
@@ -377,9 +390,36 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a12-15',
-    source: '12',
-    target: '15',
+    id: 'a14-17',
+    source: '14',
+    target: '17',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a14-18',
+    source: '14',
+    target: '18',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a15-16',
+    source: '15',
+    target: '16',
+    animated: true,
+    style: {
+      stroke: 'blue',
+    },
+  },
+  {
+    id: 'a15-17',
+    source: '15',
+    target: '17',
     animated: true,
     style: {
       stroke: 'blue',
@@ -388,15 +428,6 @@ export const ComplicatedSimulation = [
   {
     id: 'a15-18',
     source: '15',
-    target: '18',
-    animated: true,
-    style: {
-      stroke: 'blue',
-    },
-  },
-  {
-    id: 'a16-18',
-    source: '16',
     target: '18',
     animated: true,
     style: {
@@ -413,8 +444,8 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a15-19',
-    source: '15',
+    id: 'a17-19',
+    source: '17',
     target: '19',
     animated: true,
     style: {
@@ -422,54 +453,9 @@ export const ComplicatedSimulation = [
     },
   },
   {
-    id: 'a10-15',
-    source: '10',
-    target: '14',
-    animated: true,
-    style: {
-      stroke: 'blue',
-    },
-  },
-  {
-    id: 'a15-17',
-    source: '15',
-    target: '17',
-    animated: true,
-    style: {
-      stroke: 'blue',
-    },
-  },
-  {
-    id: 'a16-17',
-    source: '16',
-    target: '17',
-    animated: true,
-    style: {
-      stroke: 'blue',
-    },
-  },
-  {
-    id: 'a17-20',
-    source: '17',
-    target: '20',
-    animated: true,
-    style: {
-      stroke: 'blue',
-    },
-  },
-  {
-    id: 'a18-20',
+    id: 'a18-19',
     source: '18',
-    target: '20',
-    animated: true,
-    style: {
-      stroke: 'blue',
-    },
-  },
-  {
-    id: 'a19-20',
-    source: '19',
-    target: '20',
+    target: '19',
     animated: true,
     style: {
       stroke: 'blue',
