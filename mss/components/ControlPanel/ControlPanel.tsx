@@ -14,6 +14,7 @@ import {
 import { ControlPanelButton } from 'components/Button';
 import { Button, ButtonGroup, Typography } from '@material-ui/core';
 import { random } from 'lodash';
+import { ModifyNodes } from 'utils';
 const NumComplicatedSimulationNodes = 19;
 const NumCoolSimulationNodes = 4;
 const NumIntricateSimulationNodes = 8;
@@ -66,6 +67,8 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
     let newSimulationElements = [...simulationElements];
     newSimulationElements[failedNodeIndex] = failedNode;
 
+    ModifyNodes(newSimulationElements, failedNodeIndex);
+    /*
     newSimulationElements.forEach((element) => {
       const adjustedFailedNodeIndex = failedNodeIndex + 1;
       // I wish I did the types correctly
@@ -79,6 +82,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
         };
       }
     });
+    */
 
     setTimeout(() => {
       setElements(newSimulationElements);

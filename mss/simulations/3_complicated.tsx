@@ -54,21 +54,8 @@ export const ComplicatedSimulation = [
     },
     position: { x: 50, y: 250 },
   },
-  /*
   {
-    id: '99',
-    type: 'selectorNode',
-    data: { label: 'customNode', type: 'PostgreSQL' },
-    style: {
-      border: '2px solid green',
-      borderRadius: 3,
-      padding: 10,
-    },
-    position: { x: 50, y: 250 },
-  },
-  */
-  {
-    id: '7',
+    id: '6',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Catalog Service' },
     style: {
@@ -79,7 +66,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 50 },
   },
   {
-    id: '8',
+    id: '7',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Basket Service' },
     style: {
@@ -90,7 +77,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 100 },
   },
   {
-    id: '9',
+    id: '8',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Auth Service' },
     style: {
@@ -101,7 +88,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 150 },
   },
   {
-    id: '10',
+    id: '9',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Ordering Service' },
     style: {
@@ -112,7 +99,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 200 },
   },
   {
-    id: '11',
+    id: '10',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Analytics Service' },
     style: {
@@ -123,7 +110,7 @@ export const ComplicatedSimulation = [
     position: { x: 200, y: 250 },
   },
   {
-    id: '12',
+    id: '11',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'API Gateway' },
     style: {
@@ -134,7 +121,7 @@ export const ComplicatedSimulation = [
     position: { x: 525, y: 150 },
   },
   {
-    id: '13',
+    id: '12',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Mobile Gateway' },
     style: {
@@ -145,7 +132,7 @@ export const ComplicatedSimulation = [
     position: { x: 375, y: 100 },
   },
   {
-    id: '14',
+    id: '13',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Web Gateway' },
     style: {
@@ -156,7 +143,7 @@ export const ComplicatedSimulation = [
     position: { x: 375, y: 200 },
   },
   {
-    id: '15',
+    id: '14',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'RESTful API' },
     style: {
@@ -167,7 +154,7 @@ export const ComplicatedSimulation = [
     position: { x: 650, y: 100 },
   },
   {
-    id: '16',
+    id: '15',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'GraphQL' },
     style: {
@@ -178,7 +165,7 @@ export const ComplicatedSimulation = [
     position: { x: 650, y: 200 },
   },
   {
-    id: '17',
+    id: '16',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Mobile App' },
     style: {
@@ -189,7 +176,7 @@ export const ComplicatedSimulation = [
     position: { x: 825, y: 200 },
   },
   {
-    id: '18',
+    id: '17',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Web Client' },
     style: {
@@ -200,7 +187,7 @@ export const ComplicatedSimulation = [
     position: { x: 825, y: 50 },
   },
   {
-    id: '19',
+    id: '18',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'Web SPA Client' },
     style: {
@@ -211,7 +198,7 @@ export const ComplicatedSimulation = [
     position: { x: 825, y: 125 },
   },
   {
-    id: '20',
+    id: '19',
     type: 'selectorNode',
     data: { label: 'customNode', type: 'User(s)' },
     style: {
