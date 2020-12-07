@@ -47,7 +47,7 @@ Regardless of which way the simulation is run, you have the option of finding lo
 
 In this section, a set of nodes is already pre-built for the user. The nodes themselves can be dragged and moved around as needed for a clearer view. The nodes are indicated by `green` boxes and their data flow is shown in `blue`.
 
-To the left of the simulation view, there is the `ControlPanel` component. This control panel allows the user to switch between three simulation types: `cool`, `intricate`, and `complicated`. The `Cool` simulation is a simple case wherein there is a simple client-server architecture that is simulated by nodes. While the `Complciated` simulation is a full-on micro-service architecture that features several services.
+To the right of the simulation view, there is the `ControlPanel` component. This control panel allows the user to switch between three simulation types: `cool`, `intricate`, and `complicated`. The `Cool` simulation is a simple case wherein there is a simple client-server architecture that is simulated by nodes. While the `Complciated` simulation is a full-on micro-service architecture that features several services.
 
 **Simulation Demonstration**
 ![Image of simulation demonstration page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/normal_flow.png 'Simulation demonstration')
