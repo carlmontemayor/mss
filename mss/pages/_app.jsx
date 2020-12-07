@@ -1,3 +1,4 @@
+// Imports
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
@@ -5,10 +6,13 @@ import { useRouter } from 'next/router';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+// This is our main app component
 export default function MyApp(props) {
+  // Destructure the props
   const { Component, pageProps } = props;
   const router = useRouter();
 
+  // Refresh styles on page load
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -17,6 +21,7 @@ export default function MyApp(props) {
     }
   }, []);
 
+  // Return JSX
   return (
     <React.Fragment>
       <Head>

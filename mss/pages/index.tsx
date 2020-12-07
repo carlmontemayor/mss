@@ -1,5 +1,7 @@
+// Imports
 import Head from 'next/head';
 
+// Homepage for our cards and entry point to application
 export const Home = (): JSX.Element => (
   <div className="container">
     <Head>
@@ -7,6 +9,7 @@ export const Home = (): JSX.Element => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
+    {/**This contains our general HTML structure */}
     <main>
       <h1 className="title">
         Welcome to{' '}
@@ -24,7 +27,10 @@ export const Home = (): JSX.Element => (
           <p>Find the documentation for the code.</p>
         </a>
 
-        <a href="/report" className="card">
+        <a
+          href="https://github.com/carlmontemayor/mss/blob/main/mss/REPORT.md"
+          className="card"
+        >
           <h3>Report &rarr;</h3>
           <p>Read our report regarding our CPE 400 project.</p>
         </a>
@@ -54,6 +60,7 @@ export const Home = (): JSX.Element => (
       Routing in a Faulty Network
     </footer>
 
+    {/** Basic stylings */}
     <style jsx>{`
       .container {
         min-height: 100vh;

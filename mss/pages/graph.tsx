@@ -1,11 +1,11 @@
-import { Divider, Grid, Paper, Toolbar, Typography } from '@material-ui/core';
+// Imports
+import { Grid, Toolbar, Typography } from '@material-ui/core';
 import { ControlPanel } from 'components/ControlPanel';
 import { GraphContainer } from 'components/Container';
 import { DefaultGraph } from 'components/Graph';
 import { TopNavigation } from 'components/TopNavigation';
 import { Edge, FlowElement } from 'react-flow-renderer';
 import Link from 'next/link';
-
 import {
   CoolSimulation,
   ComplicatedSimulation,
@@ -13,22 +13,29 @@ import {
 } from 'simulations';
 import React from 'react';
 
+// A specified type for our simulations
 type SimulationType = 'cool' | 'intricate' | 'complicated';
 
+// CoolGraph is the graph element used to dispaly our nodes and simulations
 export const CoolGraph = (): JSX.Element => {
+  // Contains our state for our current array of simulations
   const [simulations] = React.useState<Array<SimulationType>>([
     'cool',
     'intricate',
     'complicated',
   ]);
+
+  // Contains our current simulation
   const [simulationType, setSimulationType] = React.useState<SimulationType>(
-    'complicated'
+    'cool'
   );
 
+  // Contains our current simulation/elements array
   const [elements, setElements] = React.useState<Array<FlowElement | Edge>>(
-    ComplicatedSimulation
+    CoolSimulation
   );
 
+  // Switch to the aproppriate simulation type and elements after clicking the specified button
   const handleSimulationChange = (simulationType: SimulationType) => {
     switch (simulationType) {
       case 'cool':
@@ -43,12 +50,12 @@ export const CoolGraph = (): JSX.Element => {
         setSimulationType('intricate');
         setElements(IntricateSimulation);
         break;
-
       default:
         break;
     }
   };
 
+  // Render JSX
   return (
     <Grid container>
       <Grid xs={12} item>
