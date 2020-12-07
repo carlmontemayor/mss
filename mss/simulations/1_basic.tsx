@@ -1,3 +1,4 @@
+// Represents a basic simulation
 export const CoolSimulation = [
   {
     id: '1',

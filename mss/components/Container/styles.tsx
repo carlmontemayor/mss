@@ -1,7 +1,8 @@
+// Import file
 import { Grid } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 
-// Contains styled versions of HTML elements
+// Contains styled versions of HTML containers
 export const ButtonContainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',

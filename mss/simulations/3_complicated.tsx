@@ -1,3 +1,4 @@
+// Represents a very complex simulation and set of nodes
 export const ComplicatedSimulation = [
   {
     id: '1',

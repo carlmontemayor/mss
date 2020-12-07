@@ -1,3 +1,4 @@
+// Represents a complex simulation of graphs/nodes
 export const IntricateSimulation = [
   {
     id: '1',

@@ -1,5 +1,8 @@
+// Imports
 import React, { memo } from 'react';
 import { Handle } from 'react-flow-renderer';
+
+// Returns a customized node
 export default memo(({ data }) => {
   return (
     <>
