@@ -26,7 +26,10 @@ export const Home = (): JSX.Element => (
           <p>Read our report regarding our CPE 400 project.</p>
         </a>
 
-        <a href="/problem" className="card">
+        <a
+          href="https://github.com/carlmontemayor/mss/blob/main/mss/PROBLEM_STATEMENT.md"
+          className="card"
+        >
           <h3>Problem Statement &rarr;</h3>
           <p>Read our project description + goals to understand the project.</p>
         </a>
