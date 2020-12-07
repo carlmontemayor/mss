@@ -38,15 +38,3 @@ Difficult to reroute. Depending on the multitude of nodes crash and the specific
 
 Table 1: Scenarios of nodal failures and the consequences of how they may affect the final result.
 
-Under hood: react graphing library uses bellman ford
-A)
-Random node crashes, marked red and reroutes
-Weights been placed on all nodes
-Possibility of crashes depends on weights assigned
-Simulation software microservice
-Aspect of the service downs, we can't do anything we have to wait until it comes up
-Ex: database down, in our simulation no way to retrieve info so we have to wait until fixed
-If API crashed, reroute to appropriate node/section
-
-b)
-While we using libraries and our own logic for detecting which ones are failing, the visualization is out novel contribution because it gives a visual demo to the
