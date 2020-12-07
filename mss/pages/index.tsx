@@ -31,12 +31,9 @@ export const Home = (): JSX.Element => (
           <p>Read our project description + goals to understand the project.</p>
         </a>
 
-        <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          className="card"
-        >
+        <a href="https://github.com/carlmontemayor/mss" className="card">
           <h3>Github Repo &rarr;</h3>
-          <p>Checkout our repository and our repositry here.</p>
+          <p>Checkout our repository and our repository here.</p>
         </a>
 
         <a href="/graph" className="card">
