@@ -1,5 +1,35 @@
 # CPE 400 Project Contents
 
+Please read this section first.
+
+The project can be access locally or through the browser. Directions for this are described in `DOCUMENTATION.md`.
+
+If accessing via web, please go to this [link](https://mss-git-main.carlmontemayor.vercel.app).
+
+If accessing locally, please follow the directions below.
+
+```bash
+git clone https://github.com/carlmontemayor/mss.git
+```
+
+Move into the `/mss` directory
+
+```bash
+cd mss
+```
+
+Install the aproppriate packages (need to have Node.js installed)
+
+```bash
+npm install
+```
+
+Run the local development server
+
+```bash
+npm run dev
+```
+
 ## Sections
 
 - `DOCUMENTATION.md`

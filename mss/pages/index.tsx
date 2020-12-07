@@ -57,7 +57,7 @@ export const Home = (): JSX.Element => (
 
     <footer>
       Made by Curtis Chung + Carl Montemayor w/ ❤️ <br /> CPE 400 - Dynamic
-      Routing in a Faulty Network
+      Routing in a Microservice Faulty Network
     </footer>
 
     {/** Basic stylings */}

@@ -6,6 +6,7 @@ import { styled } from '@material-ui/core/styles';
 export const ButtonContainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',
+  alignItems: 'center',
 });
 
 export const SimpleContainer = styled('div')({

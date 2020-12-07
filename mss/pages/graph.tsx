@@ -12,22 +12,23 @@ import {
   IntricateSimulation,
 } from 'simulations';
 import React from 'react';
+import { InfoPanel } from 'components/InfoPanel';
 
 // A specified type for our simulations
-type SimulationType = 'cool' | 'intricate' | 'complicated';
+type SimulationType = 'simple' | 'intricate' | 'complicated';
 
 // CoolGraph is the graph element used to dispaly our nodes and simulations
 export const CoolGraph = (): JSX.Element => {
   // Contains our state for our current array of simulations
   const [simulations] = React.useState<Array<SimulationType>>([
-    'cool',
+    'simple',
     'intricate',
     'complicated',
   ]);
 
   // Contains our current simulation
   const [simulationType, setSimulationType] = React.useState<SimulationType>(
-    'cool'
+    'simple'
   );
 
   // Contains our current simulation/elements array
@@ -38,8 +39,8 @@ export const CoolGraph = (): JSX.Element => {
   // Switch to the aproppriate simulation type and elements after clicking the specified button
   const handleSimulationChange = (simulationType: SimulationType) => {
     switch (simulationType) {
-      case 'cool':
-        setSimulationType('cool');
+      case 'simple':
+        setSimulationType('simple');
         setElements(CoolSimulation);
         break;
       case 'complicated':
@@ -72,22 +73,32 @@ export const CoolGraph = (): JSX.Element => {
                 </Link>
               </Grid>
               <Grid xs={2} item>
-                <Link href="/documentation">
-                  <Typography variant="h6">Documentation</Typography>
+                <Link href="https://github.com/carlmontemayor/mss/blob/main/mss/DOCUMENTATION.md">
+                  <a>
+                    <Typography variant="h6">Documentation</Typography>
+                  </a>
                 </Link>
               </Grid>
               <Grid xs={2} item>
-                <Link href="/report">
-                  <Typography variant="h6">Problem Statement</Typography>
+                <Link href="https://github.com/carlmontemayor/mss/blob/main/mss/REPORT.md">
+                  <a>
+                    <Typography variant="h6">Report</Typography>
+                  </a>
                 </Link>
               </Grid>
               <Grid xs={2} item>
-                <Link href="/">
-                  <Typography variant="h6"></Typography>
+                <Link href="https://github.com/carlmontemayor/mss/blob/main/mss/PROBLEM_STATEMENT.md">
+                  <a>
+                    <Typography variant="h6">Problem Statement</Typography>
+                  </a>
                 </Link>
               </Grid>
               <Grid xs={2} item>
-                <Typography variant="h6">Github Repo</Typography>
+                <Link href="https://github.com/carlmontemayor/mss">
+                  <a>
+                    <Typography variant="h6">Github Repo</Typography>
+                  </a>
+                </Link>
               </Grid>
               <style jsx>{`
                 footer {
@@ -127,13 +138,15 @@ export const CoolGraph = (): JSX.Element => {
               simulationType={simulationType}
               setElements={setElements}
             />
+            <br />
+            <InfoPanel />
           </Grid>
         </Grid>
       </GraphContainer>
       <Grid xs={12} item>
         <footer>
           Made by Curtis Chung + Carl Montemayor w/ ❤️ <br /> CPE 400 - Dynamic
-          Routing in a Faulty Network
+          Routing in a Faulty Microservice Network
         </footer>
         <style jsx>{`
           footer {

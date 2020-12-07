@@ -11,6 +11,7 @@ import { ControlPanelButton } from 'components/Button';
 import { Button, ButtonGroup, Typography } from '@material-ui/core';
 import { random } from 'lodash';
 import { ModifyNodes } from 'utils';
+import { CoolSimulation } from 'simulations';
 
 // Constants for our simulations
 const NumComplicatedSimulationNodes = 19;
@@ -18,7 +19,7 @@ const NumCoolSimulationNodes = 4;
 const NumIntricateSimulationNodes = 8;
 
 // Re-specified type for simulations
-type SimulationType = 'cool' | 'intricate' | 'complicated';
+type SimulationType = 'simple' | 'intricate' | 'complicated';
 
 // Interface for our ControlPanelProps
 // These are the specific types that must be passed in as props to our ControlPanel
@@ -41,7 +42,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
   // FindRandomNode takes in a simulation type and finds a number within the specified range
   const FindRandomNode = (simulationType: SimulationType): Number => {
     switch (simulationType) {
-      case 'cool':
+      case 'simple':
         return random(0, NumCoolSimulationNodes);
         break;
       case 'intricate':
@@ -58,7 +59,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
 
   // This resets the current canvas/graphs to the basic one initially given
   const handleResetClick = () => {
-    console.log('resetting');
+    window.location.reload();
   };
 
   // Iterates through the nodes and finds a randomly failing node.
@@ -88,9 +89,11 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
 
   return (
     <ControlPanelContainer>
-      <Typography variant="h4">Control Panel</Typography>
+      <Typography align="center" variant="h4">
+        Control Panel
+      </Typography>
       <ControlPanelButtonContainer>
-        <ButtonGroup size="medium">
+        <ButtonGroup size="small">
           {simulations.map((simulation) => (
             <Button
               key={simulation}
