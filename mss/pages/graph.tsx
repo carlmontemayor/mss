@@ -39,8 +39,8 @@ export const CoolGraph = (): JSX.Element => {
   // Switch to the aproppriate simulation type and elements after clicking the specified button
   const handleSimulationChange = (simulationType: SimulationType) => {
     switch (simulationType) {
-      case 'cool':
-        setSimulationType('cool');
+      case 'simple':
+        setSimulationType('simple');
         setElements(CoolSimulation);
         break;
       case 'complicated':
