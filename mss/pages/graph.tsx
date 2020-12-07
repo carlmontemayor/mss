@@ -1,9 +1,11 @@
-import { Grid, Paper, Toolbar, Typography } from '@material-ui/core';
+import { Divider, Grid, Paper, Toolbar, Typography } from '@material-ui/core';
 import { ControlPanel } from 'components/ControlPanel';
 import { GraphContainer } from 'components/Container';
 import { DefaultGraph } from 'components/Graph';
 import { TopNavigation } from 'components/TopNavigation';
 import { Edge, FlowElement } from 'react-flow-renderer';
+import Link from 'next/link';
+
 import {
   CoolSimulation,
   ComplicatedSimulation,
@@ -52,7 +54,50 @@ export const CoolGraph = (): JSX.Element => {
       <Grid xs={12} item>
         <TopNavigation position="static">
           <Toolbar>
-            <Typography variant="h6">MSS - Microservice Simulation</Typography>
+            <Grid container>
+              <Grid xs={2} item>
+                <Link href="/">
+                  <a>
+                    <Typography variant="h6">
+                      MSS - Microservice Simulation
+                    </Typography>
+                  </a>
+                </Link>
+              </Grid>
+              <Grid xs={2} item>
+                <Link href="/documentation">
+                  <Typography variant="h6">Documentation</Typography>
+                </Link>
+              </Grid>
+              <Grid xs={2} item>
+                <Link href="/report">
+                  <Typography variant="h6">Problem Statement</Typography>
+                </Link>
+              </Grid>
+              <Grid xs={2} item>
+                <Link href="/">
+                  <Typography variant="h6"></Typography>
+                </Link>
+              </Grid>
+              <Grid xs={2} item>
+                <Typography variant="h6">Github Repo</Typography>
+              </Grid>
+              <style jsx>{`
+                footer {
+                  width: 100%;
+                  height: 100px;
+                  border-top: 1px solid #eaeaea;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                a {
+                  color: inherit;
+                  text-decoration: none;
+                }
+              `}</style>
+            </Grid>
           </Toolbar>
         </TopNavigation>
       </Grid>
@@ -91,6 +136,11 @@ export const CoolGraph = (): JSX.Element => {
             display: flex;
             justify-content: center;
             align-items: center;
+          }
+
+          a {
+            color: inherit;
+            text-decoration: none;
           }
         `}</style>
       </Grid>
