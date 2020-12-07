@@ -16,7 +16,10 @@ export const Home = (): JSX.Element => (
       </h1>
 
       <div className="grid">
-        <a href="/documentation" className="card">
+        <a
+          href="https://github.com/carlmontemayor/mss/blob/main/mss/DOCUMENTATION.md"
+          className="card"
+        >
           <h3>Documentation &rarr;</h3>
           <p>Find the documentation for the code.</p>
         </a>
