@@ -78,7 +78,6 @@ export const CoolGraph = (): JSX.Element => {
           </Grid>
         </Grid>
       </GraphContainer>
-
       <Grid xs={12} item>
         <Paper>footer</Paper>
       </Grid>
