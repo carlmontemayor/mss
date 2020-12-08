@@ -1,14 +1,14 @@
-﻿CPE 400 Final Project Microservice Simulation Software (MSS) Curtis Chung and Carl Montemayor Instructors: Shamik Sengupta ![](Project%20Report.001.png)
+﻿CPE 400 Final Project Microservice Simulation Software (MSS) Curtis Chung and Carl Montemayor Instructors: Shamik Sengupta 
 
 Due: December 7 
 
-Project Overview:  ![](Project%20Report.001.png)
+Project Overview:
 
 In recent years, the micro-service architecture has been favored by many software companies as a way to structure large projects and applications so that independent pieces of software can be developed asynchronously and with little to no dependencies. In this type of architecture, pieces of software are broken apart into smaller "services" that are self-contained and functional (usually deployed via cloud services). The result is a graph-like network of several services that communicate with one another via HTTP or RPC. Although this provides many benefits to developers, opting into this architecture presents many difficult tasks such as how these services communicate with other services and how to share such data and information in an efficient manner. 
 
 This project aims to develop a network monitoring system specific to the micro-service architecture. It presents itself as an online web application that allows for users to simulate the passing of data, messages, and information to these services and the creation of new services in a user-friendly manner. Users will be able to simulate the creation of their own "services" whether it be an API, database, or website, and track the metrics associated with these interactions such as delays, errors, and latency in their system. 
 
-**Technical Report: Implementation ![](Project%20Report.001.png)**
+**Technical Report: Implementation
 
 For the project, we built a system where users can simulate their own micro service network system and build all the different connections to each node. Each node can act as different aspects of a network system, such as databases, frontend, etc. This project is to give a visual simulation of the test cases and scenarios rather than lines on a command line. When on the web application, the user will have the option to run the simulation and choose between three different scenarios. Each scenario will break down a different node, while the nodal re-routing algorithm will choose an optimal node to make a new connection to without interrupting any nodal processes. This also shows the data flow (which in the context of microservices and software architecture can simulate HTTP requests) between the different nodes.  
 
@@ -16,9 +16,10 @@ The purpose of this project is to give a novel solution to network testing scena
 
 red as displayed in Figure 1.  
 
-Figure 1: “Simple” Simulation before and after user clicks run and crashes one node ![](Project%20Report.001.png)![](Project%20Report.002.png)![](Project%20Report.003.png)
+![](Project%20Report.002.png)![](Project%20Report.003.png)
+Figure 1: “Simple” Simulation before and after user clicks run and crashes one node 
 
-**Technical Report: Simulation and Protocol Walkthrough ![](Project%20Report.001.png)**
+**Technical Report: Simulation and Protocol Walkthrough**
 
 Our simulation is in the context of microservices. As stated in our problem statement/overview, our goal was to find out if it was possible at all to monitor and check if pieces of a software or web application (which can have multiple components) can be monitored. A microservice architecture application can actually present itself as a large network that is made up of servers and components such as databases, APIs, and connections to a client-side website, etc. In our simulation, we have developed three situations/simulations that are possible configurations of software. In our first (“Basic”) simulation, we have a typical client-server architecture that is not broken up into smaller services. In our second (“Intricate”) simulation, we have a more complex software architecture that is made up of more nodes which simulates the process of converting to fully microservice architecture. Lastly, we have a third (“Complicated”) 
 
