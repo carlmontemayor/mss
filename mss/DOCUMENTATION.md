@@ -43,7 +43,7 @@ npm run dev
 Regardless of which way the simulation is run, you have the option of finding looking at the simulation page.
 
 **Simulation**
-![Image of simulation page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/homepage.png 'Simulation page')
+![Image of simulation page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/simulationpage.png 'Simulation page')
 
 In this section, a set of nodes is already pre-built for the user. The nodes themselves can be dragged and moved around as needed for a clearer view. The nodes are indicated by `green` boxes and their data flow is shown in `blue`.
 
@@ -77,7 +77,24 @@ The `documentation` page(s) include the `Code Documentation` (this document) whi
 
 A set of design components, located within the `/components` route were custom build using `CSS` and `Material UI`.
 
-The non-presentational components such as the graph and the UI logic behind the graph were also custom build components, as well.
+The non-presentational components such as the graph and the UI logic behind the graph were also custom built components, as well.
+
+There is a single library, `React Flow Renderer` that was used to generate the visualizations. From a programmatic perspective, the simulation page itself is rendered by a single file, `graph.tsx` and this file contains a single React component that renders other components. In particular this file renders the `DefaultGraph` which renders the graph and its nodes and the `ControlPanel` and `InfoPanel` components which render controls for the simulation (running and switching the simulation) and for information, as well. 
+
+### UI Logic
+
+The UI logic is separated from the presentational logic. This means that functions that are used to modify and set the UI state and data that flows through them. The components are then "linked" via these functions. The most important components and functions that are described are listed below along with ther signficiance. 
+
+#### DefaultGraph
+The default graph component is significant as it allows us to render the nodes of the graph along with the graph itself. The graph is draggable and is highly performant. There are several `props` that you can pass into it to change the behavior/look of the components. One such `prop` is the `elements` prop which allows for setting the aproppriate elements/nodes to be rendered on the screen.
+
+#### ControlPanel + handleSimulationChange()
+The `ControlPanel` is an important UI component for controlling the current simulation that the user is currently on and for resetting the simulation and running it. `handleSimulationChange()` is a function that belongs to the `ControlPanel` component and whose primary functionality is to modify the aproppriate data to change the current view. This function does so by checking which simulation the user is currently on and calling the aproppriate functions to set the user-selected simulation type.
+
+#### React.useState() + setElements()
+`React.useState()` and `setElements()` are a combination of functions that work together to expose the current data that is flowing through the application. The array of elements, for example, to display the graphs/nodes are set via the `setElements()` method and the function is actually passed down to the aproppriate components to modify the state elsewhere in the application.
+
+**NOTE: I do not go over how React and the DOM works. If there are any questions regarding the frontend web library used please refer to reactjs.org**
 
 ### Code Structure
 
@@ -85,11 +102,11 @@ The code itself separates concerns very well. The `/components` directory only h
 
 If a component do is stateful and contains heavy UI logic as in `graph.tsx` and `ControlPanel.tsx`. Then the only concern within these files are the UI actions and logic associated with them.
 
-Within the `/simulations` directory, there exists three pre-build simulations which are essentially arrays of `FlowElements` (as defined in the `ReactFlowRenderer`) package.
+Within the `/simulations` directory, there exists three pre-build simulations which are essentially arrays of `FlowElements` (as defined in the `ReactFlowRenderer`) package. These arrays are very important as the data from the `/simulations` directory is what is pulled and visualized in the simulations. In code, these arrays are "pulled" using the importing system in Javascript/Typescript.
 
 Furthermore, the `/utils` folder abstracts some Javascript-specific helper functions that were useful in the manipulation of the graph.
 
-### Graph Algorithm
+### Graph Algorithm Function
 
 Although no specialzied algorithm was developed to modify the graph, there were a lot of UI logic that needed to be impleneted for the simulation to work correctly. In general, the heavy lifting for graph algorithms was done by the `ReactFlowRenderer` library.
 
