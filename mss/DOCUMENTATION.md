@@ -79,8 +79,6 @@ A set of design components, located within the `/components` route were custom b
 
 The non-presentational components such as the graph and the UI logic behind the graph were also custom build components, as well.
 
-There are several
-
 ### Code Structure
 
 The code itself separates concerns very well. The `/components` directory only handles styles and custom components. This allows for cleaner code as the styles are discretely separated from the components that use the styles.
