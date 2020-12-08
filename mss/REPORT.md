@@ -12,11 +12,10 @@ This project aims to develop a network monitoring system specific to the micro-s
 
 For the project, we built a system where users can simulate their own micro service network system and build all the different connections to each node. Each node can act as different aspects of a network system, such as databases, frontend, etc. This project is to give a visual simulation of the test cases and scenarios rather than lines on a command line. When on the web application, the user will have the option to run the simulation and choose between three different scenarios. Each scenario will break down a different node, while the nodal re-routing algorithm will choose an optimal node to make a new connection to without interrupting any nodal processes. This also shows the data flow (which in the context of microservices and software architecture can simulate HTTP requests) between the different nodes.  
 
-The purpose of this project is to give a novel solution to network testing scenarios and problems within business networks. The visual simulation allows software developers an easier way to see how each node (network structures) interacts with one another with their connections and if one crashes, it's easier to see which nodes it will affect. Each node in our simulation has a different weight to it. Higher weights mean it is more important to the network, and therefore is much less likely to crash. If a node were to crash, the node itself and any connections will turn 
+The purpose of this project is to give a novel solution to network testing scenarios and problems within business networks. The visual simulation allows software developers an easier way to see how each node (network structures) interacts with one another with their connections and if one crashes, it's easier to see which nodes it will affect. Each node in our simulation has a different weight to it. Higher weights mean it is more important to the network, and therefore is much less likely to crash. If a node were to crash, the node itself and any connections will turn red as displayed in Figure 1.  
 
-red as displayed in Figure 1.  
+![Image of simulation demonstration page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/figure1.png)![](https://github.com/carlmontemayor/mss/blob/main/mss/images/figure1_2.png)
 
-![](Project%20Report.002.png)![](Project%20Report.003.png)
 Figure 1: “Simple” Simulation before and after user clicks run and crashes one node 
 
 **Technical Report: Simulation and Protocol Walkthrough**
