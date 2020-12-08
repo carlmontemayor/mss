@@ -40,9 +40,7 @@ In general, in larger applications, the need for a microservice architecture bec
 
 **Analysis:** 
 
-When certain aspects of the network crash, appropriate actions will occur in our simulation. For example, if the database or main node were to crash in our simulation, there are no other databases to reroute any connections to, so there is no choice but to wait for it to come back up in order for the service to continue to function properly. If smaller aspects, such as the API, were to crash, then the graph will choose an appropriate node to reroute the connections to until the service is back on. In the case of Figure 2, if the node labeled as the database (PostgreSQL) were to become red and crash, there would be no way to reroute the nodes ![](Project%20Report.004.png)
-
-connected to it to another node. Even if there were multiple databases, each one would fill a specific role. One database node cannot take over the functions of another database node, therefore there is no choice but to wait for it to boot back up. 
+When certain aspects of the network crash, appropriate actions will occur in our simulation. For example, if the database or main node were to crash in our simulation, there are no other databases to reroute any connections to, so there is no choice but to wait for it to come back up in order for the service to continue to function properly. If smaller aspects, such as the API, were to crash, then the graph will choose an appropriate node to reroute the connections to until the service is back on. In the case of Figure 2, if the node labeled as the database (PostgreSQL) were to become red and crash, there would be no way to reroute the nodes connected to it to another node. Even if there were multiple databases, each one would fill a specific role. One database node cannot take over the functions of another database node, therefore there is no choice but to wait for it to boot back up. 
 
 ![](Project%20Report.005.png)
 
@@ -58,8 +56,8 @@ When running our simulation, a few things came to note of real-life network fail
 | - | - |
 |Nodes can crash and lose all of it’s connections to other nodes. |When a node crashes, the ability to communicate the information necessary for other nodes. Can be rerouted |
 |Main/Important nodes crash |Nothing can be done except to wait until that main node/service comes back up. Cannot reroute |
-|Multiple nodes crash  |Difficult to reroute. Depending on the multitude of nodes crash and the specifics of which one, can be hard or impossible to reroute in real network situations |
-Table 1: Scenarios of nodal failures and the consequences of how they may affect the final result. ![](Project%20Report.006.png)
+|Multiple nodes crash  |Difficult to reroute. Depending on the multitude of nodes crash and the specifics of which one, can be hard or impossible to reroute in real network situations 
+Table 1: Scenarios of nodal failures and the consequences of how they may affect the final result.
 
 As stated before and in our problem statement, our simulation is in the context of microservices and largely software architecture. Given this context, it is clear from runs of our simulation/visualization that the nodes in our simulation run very independently of one another. The practicality of our software/application is that users, developers or system administrators are able to simulate a large number of servers or pieces of architecture to accurately find out which other servers or pieces are affected by a faulty node. As a result, our simulation and analysis showed the advantage and high-availability that microservice applications have. This shows that if software is broken down into smaller services, the advantage is that there is high availability of the software itself. For example, if there is a singular service of an application that is down (similar to the “Complicated” simulation scenario), the other services within the application will stay alive and will continue providing data. In contrast, with the “Simple” simulation that is run, there are no smaller microservices in place, therefore, if a critical portion of the application, say an API is faulty or down, the whole application, will therefore also have downtime. As a result, our analysis and reports of our simulations demonstrate that when developing applications with a 
 
