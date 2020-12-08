@@ -14,7 +14,7 @@ For the project, we built a system where users can simulate their own micro serv
 
 The purpose of this project is to give a novel solution to network testing scenarios and problems within business networks. The visual simulation allows software developers an easier way to see how each node (network structures) interacts with one another with their connections and if one crashes, it's easier to see which nodes it will affect. Each node in our simulation has a different weight to it. Higher weights mean it is more important to the network, and therefore is much less likely to crash. If a node were to crash, the node itself and any connections will turn red as displayed in Figure 1.  
 
-![Image of simulation demonstration page for website](https://github.com/carlmontemayor/mss/blob/main/mss/images/figure1.png)![](https://github.com/carlmontemayor/mss/blob/main/mss/images/figure1_2.png)
+![](https://github.com/carlmontemayor/mss/blob/main/mss/images/figure1.png)![](https://github.com/carlmontemayor/mss/blob/main/mss/images/figure1_2.png)
 
 Figure 1: “Simple” Simulation before and after user clicks run and crashes one node 
 
